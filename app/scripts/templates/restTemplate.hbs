@@ -1,0 +1,60 @@
+<div class="template template-rest">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">
+            <a data-toggle="collapse" href="#collapse-rest" class="collapse-toggle">
+              Rest View
+            </a>
+          </div>
+        </div>
+        <div id="collapse-rest" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <div class="row">
+              <div id="form-view"></div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <a data-toggle="collapse" href="#collapse-collection" class="collapse-toggle">
+                        Collection
+                      </a>
+                    </div>
+                  </div>
+                  <div id="collapse-collection" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Population</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {{#each territoryCollection.models}}
+                          <tr>
+                            <td>{{attributes.id}} ({{math attributes.id "*" 2}})</td>
+                            <td>{{attributes.name}}</td>
+                            <td>{{attributes.population}}</td>
+                            <td>
+                              <button class="btn btn-success btn-xs btn-save" data-id="{{@index}}">Save</button>
+                              <button class="btn btn-danger btn-xs btn-delete" data-id="{{@index}}">Delete</button>
+                            </td>
+                          </tr>
+                          {{/each}}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,92 @@
+<div class="template template-default">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">
+            <a data-toggle="collapse" href="#collapse-default" class="collapse-toggle">
+              Default View
+            </a>
+          </div>
+        </div>
+        <div id="collapse-default" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <a data-toggle="collapse" href="#collapse-main" class="collapse-toggle">
+                        URL params
+                      </a>
+                    </div>
+                  </div>
+                  <div id="collapse-main" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <a href="#/param1/{{param1}}/param2/{{param2}}">#/main/param1/{{param1}}/param2/{{param2}}</a>
+                      <ul class="list-unstyled">
+                        {{#if isParam1Set}}
+                        <li>param1: {{options._value1}}</li>
+                        {{/if}}
+                        {{#unless isParam2Unset}}
+                        <li>param2: {{options._value2}}</li>
+                        {{/unless}}
+                        <li>isParam1SetDesc: {{isParam1SetDesc}}</li>
+                        <li>isParam2UnsetDesc: {{isParam2UnsetDesc}}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="form-view"></div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <a data-toggle="collapse" href="#collapse-main" class="collapse-toggle">
+                        Widgets
+                      </a>
+                    </div>
+                  </div>
+                  <div id="collapse-main" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <form>
+                        <input id="input-daterangepicker" type="text" class="form-control form-group" placeholder="bootstrap-daterangepicker">
+                        <input id="input-autonumeric" type="text" class="form-control form-group" placeholder="autonumeric">
+                        <select class="form-control form-group" title="qTip2 example">
+                          {{#each selectList}}
+                          <option value="{{value}}">{{key}}</option>
+                          {{/each}}
+                        </select>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+                          Launch demo modal
+                        </button>
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                              </div>
+                              <div class="modal-body">
+                                ...
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+/* Custom variables first */
+@import "variables";
+
+/* Bootstrap */
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+@import '../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
+
+/* Font Awesome */
+$fa-font-path: "../bower_components/font-awesome/fonts";
+@import '../bower_components/font-awesome/scss/font-awesome';
+
+/* Custom */
+@import "styles";

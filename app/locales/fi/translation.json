@@ -1,0 +1,28 @@
+{
+  "menu": {
+    "default": "Oletusnäkymä",
+    "main": "Päänäkymä"
+  },
+  "boolean": {
+    "true": "Kyllä",
+    "false": "Ei"
+  },
+  "territory": {
+    "name": {
+      "placeholder": "Nimi",
+      "error": {
+        "length": "Nimen on oltava vähintään 3 merkkiä pitkä."
+      }
+    },
+    "population": {
+      "placeholder": "Väkiluku",
+      "error": {
+        "amount": "Väkiluvun on oltava vähintään 1000."
+      }
+    },
+    "submit": "Tallenna"
+  },
+  "error": {
+    "required": "Vaadittu tieto puuttuu."
+  }
+}

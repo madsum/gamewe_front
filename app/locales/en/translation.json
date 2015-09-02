@@ -1,0 +1,28 @@
+{
+  "menu": {
+    "default": "Default View",
+    "main": "Main View"
+  },
+  "boolean": {
+    "true": "Yes",
+    "false": "No"
+  },
+  "territory": {
+    "name": {
+      "placeholder": "Name",
+      "error": {
+        "length": "Name must be at least 3 characters long."
+      }
+    },
+    "population": {
+      "placeholder": "Population",
+      "error": {
+        "amount": "Population has to be at least 1000."
+      }
+    },
+    "submit": "Save"
+  },
+  "error": {
+    "required": "Required information is missing."
+  }
+}
